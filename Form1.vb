@@ -5,14 +5,14 @@
     End Sub
 
     Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
-        MessageBox.Show("D&D Companion Tool" & vbCrLf & "Developed by Mitchell Bath" & vbCrLf & "---")
+        MessageBox.Show("D&D Companion Tool" & vbCrLf & "Developed by Mitchell Bath" & vbCrLf & "---", "About")
     End Sub
 
     Private Sub btnHealth1_Click(sender As Object, e As EventArgs) Handles btnHealth1.Click
         Health.Show()
     End Sub
 
-    Private Sub btnNewParty_Click(sender As Object, e As EventArgs) Handles btnNewParty.Click
+    Private Sub btnNewParty_Click(sender As Object, e As EventArgs) Handles btnNewPlayer.Click
         PartyBuilder.Show()
     End Sub
 
@@ -49,5 +49,9 @@
             intTemp = intTemp + CInt(Math.Ceiling(Rnd() * CInt(txtNumOfSides.Text)))
         Next
         lblDiceOutput.Text = intTemp
+    End Sub
+
+    Private Sub btnNewEnemy_Click(sender As Object, e As EventArgs) Handles btnNewEnemy.Click
+        AddNPC.Show()
     End Sub
 End Class
