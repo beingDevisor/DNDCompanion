@@ -24,14 +24,14 @@ Partial Class PartyBuilder
     Private Sub InitializeComponent()
         Me.btnPartyBuilderConfirm = New System.Windows.Forms.Button()
         Me.btnPartyBuilderCancel = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtPlayerName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtCharName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtMaxHP = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtAC = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnPartyBuilderConfirm
@@ -52,12 +52,12 @@ Partial Class PartyBuilder
         Me.btnPartyBuilderCancel.Text = "Cancel"
         Me.btnPartyBuilderCancel.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtPlayerName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(113, 10)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(192, 20)
-        Me.TextBox1.TabIndex = 11
+        Me.txtPlayerName.Location = New System.Drawing.Point(113, 10)
+        Me.txtPlayerName.Name = "txtPlayerName"
+        Me.txtPlayerName.Size = New System.Drawing.Size(192, 20)
+        Me.txtPlayerName.TabIndex = 11
         '
         'Label1
         '
@@ -77,12 +77,12 @@ Partial Class PartyBuilder
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Character Name"
         '
-        'TextBox2
+        'txtCharName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(113, 46)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(192, 20)
-        Me.TextBox2.TabIndex = 14
+        Me.txtCharName.Location = New System.Drawing.Point(113, 46)
+        Me.txtCharName.Name = "txtCharName"
+        Me.txtCharName.Size = New System.Drawing.Size(192, 20)
+        Me.txtCharName.TabIndex = 14
         '
         'Label3
         '
@@ -93,12 +93,12 @@ Partial Class PartyBuilder
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "Maximum HP"
         '
-        'TextBox3
+        'txtMaxHP
         '
-        Me.TextBox3.Location = New System.Drawing.Point(113, 82)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(192, 20)
-        Me.TextBox3.TabIndex = 16
+        Me.txtMaxHP.Location = New System.Drawing.Point(113, 82)
+        Me.txtMaxHP.Name = "txtMaxHP"
+        Me.txtMaxHP.Size = New System.Drawing.Size(192, 20)
+        Me.txtMaxHP.TabIndex = 16
         '
         'Label4
         '
@@ -109,26 +109,26 @@ Partial Class PartyBuilder
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Armor Class"
         '
-        'TextBox4
+        'txtAC
         '
-        Me.TextBox4.Location = New System.Drawing.Point(113, 118)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(192, 20)
-        Me.TextBox4.TabIndex = 18
+        Me.txtAC.Location = New System.Drawing.Point(113, 118)
+        Me.txtAC.Name = "txtAC"
+        Me.txtAC.Size = New System.Drawing.Size(192, 20)
+        Me.txtAC.TabIndex = 18
         '
         'PartyBuilder
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(475, 153)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtAC)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtMaxHP)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtCharName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPlayerName)
         Me.Controls.Add(Me.btnPartyBuilderCancel)
         Me.Controls.Add(Me.btnPartyBuilderConfirm)
         Me.Name = "PartyBuilder"
@@ -139,12 +139,12 @@ Partial Class PartyBuilder
     End Sub
     Friend WithEvents btnPartyBuilderConfirm As Button
     Friend WithEvents btnPartyBuilderCancel As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtPlayerName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtCharName As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtMaxHP As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtAC As TextBox
 End Class

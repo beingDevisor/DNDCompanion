@@ -1,5 +1,10 @@
 ﻿Public Class Form1
-
+    Public Sub UpdateForm()
+        lstPlayers.Items.Clear()
+        For i = 0 To PartyBuilder.strPlayers.Count
+            lstPlayers.Items.Add(PartyBuilder.strPlayers(i))
+        Next
+    End Sub
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
@@ -7,7 +12,6 @@
     Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
         MessageBox.Show("D&D Companion Tool" & vbCrLf & "Developed by Mitchell Bath" & vbCrLf & "---", "About")
     End Sub
-
     Private Sub btnHealth1_Click(sender As Object, e As EventArgs) Handles btnHealth1.Click
         Health.Show()
     End Sub
@@ -15,7 +19,6 @@
     Private Sub btnNewParty_Click(sender As Object, e As EventArgs) Handles btnNewPlayer.Click
         PartyBuilder.Show()
     End Sub
-
     Private Sub btnD4_Click(sender As Object, e As EventArgs) Handles btnD4.Click
         DiceRoll(4)
     End Sub

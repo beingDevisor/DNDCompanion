@@ -41,12 +41,12 @@ Partial Class Form1
         Me.lblDiced = New System.Windows.Forms.Label()
         Me.txtNumOfDice = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lstPlayers = New System.Windows.Forms.ListBox()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lblArmorClass = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblArmorClass = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.lstPlayers = New System.Windows.Forms.ListBox()
         Me.btnNewEnemy = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -230,38 +230,14 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Players"
         '
-        'lstPlayers
+        'Label3
         '
-        Me.lstPlayers.FormattingEnabled = True
-        Me.lstPlayers.Location = New System.Drawing.Point(7, 20)
-        Me.lstPlayers.Name = "lstPlayers"
-        Me.lstPlayers.Size = New System.Drawing.Size(250, 290)
-        Me.lstPlayers.TabIndex = 0
-        '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(296, 20)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(259, 23)
-        Me.ProgressBar1.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(266, 25)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(22, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "HP"
-        '
-        'lblArmorClass
-        '
-        Me.lblArmorClass.AutoSize = True
-        Me.lblArmorClass.Location = New System.Drawing.Point(266, 63)
-        Me.lblArmorClass.Name = "lblArmorClass"
-        Me.lblArmorClass.Size = New System.Drawing.Size(48, 13)
-        Me.lblArmorClass.TabIndex = 3
-        Me.lblArmorClass.Text = "AC:    20"
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(266, 99)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(64, 13)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "Initiative: 20"
         '
         'Label2
         '
@@ -272,14 +248,38 @@ Partial Class Form1
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "20/20"
         '
-        'Label3
+        'lblArmorClass
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(266, 99)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 13)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "Initiative: 20"
+        Me.lblArmorClass.AutoSize = True
+        Me.lblArmorClass.Location = New System.Drawing.Point(266, 63)
+        Me.lblArmorClass.Name = "lblArmorClass"
+        Me.lblArmorClass.Size = New System.Drawing.Size(48, 13)
+        Me.lblArmorClass.TabIndex = 3
+        Me.lblArmorClass.Text = "AC:    20"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(266, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(22, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "HP"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(296, 20)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(259, 23)
+        Me.ProgressBar1.TabIndex = 1
+        '
+        'lstPlayers
+        '
+        Me.lstPlayers.FormattingEnabled = True
+        Me.lstPlayers.Location = New System.Drawing.Point(7, 20)
+        Me.lstPlayers.Name = "lstPlayers"
+        Me.lstPlayers.Size = New System.Drawing.Size(250, 290)
+        Me.lstPlayers.TabIndex = 0
         '
         'btnNewEnemy
         '
