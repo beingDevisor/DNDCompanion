@@ -1,9 +1,10 @@
 ﻿Public Class Form1
     Public Sub UpdateForm()
         lstPlayers.Items.Clear()
-        For i = 0 To PartyBuilder.strPlayers.Count
-            lstPlayers.Items.Add(PartyBuilder.strPlayers(i))
-        Next
+        lstPlayers.Items.Add(PartyBuilder.strPlayers(0))
+        ' For i = 0 To PartyBuilder.strPlayers.Count
+        'lstPlayers.Items.Add(PartyBuilder.strPlayers(i))
+        'Next
     End Sub
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
